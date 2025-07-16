@@ -1,4 +1,4 @@
-const URL = "https://teachablemachine.withgoogle.com/models/l_zvMSkA3/";
+const URL = "https://teachablemachine.withgoogle.com/models/3O9JIdn-U/";
 let model, labelContainer, maxPredictions;
 let isPredicting = false;
 let currentFacingMode = 'environment';
@@ -125,7 +125,7 @@ async function startClassification() {
   // … โค้ดเดิมสำหรับแสดงข้อความ …
   let resultText = {
     'D1': '✅ ปลอดเชื้อโรค ✅',
-    'D2': '🚨 เป็นโรคจุดราขาว 🚨',
+    'D2': '🚨 เป็นโรคจุดขาว 🚨',
     'D3': '🚨 เป็นโรคสนิม 🚨',
     'D4': '🚨 เป็นโรคใบไหม้ 🚨',
     'D5': '🚨 กรุณาถ่ายใหม่ 🚨',
@@ -304,7 +304,7 @@ causeButton.addEventListener('click', () => {
     } else if (resultText.includes('สนิม')) {
         url = 'bad3.html';
     } else if (resultText.includes('ใบไหม้')) {
-        url = 'bad4.html';
+        url = 'bad.html';
     } else if (resultText.includes('ราขาว')) {
         url = 'bad2.html';
     }
