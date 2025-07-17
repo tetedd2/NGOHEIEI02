@@ -299,7 +299,7 @@ causeButton.addEventListener('click', () => {
     const resultText = resultDisplayElement.querySelector('h3, p')?.textContent.trim() || '';
     let url = 'bad.html'; // ค่าเริ่มต้น
 
-    if (resultText.includes('จุดราขาว')) {
+    if (resultText.includes('โรคจุดราขาว')) {
         url = 'bad11.html';
     } else if (resultText.includes('สนิม')) {
         url = 'bad3.html';
@@ -318,7 +318,7 @@ treatmentButton.addEventListener('click', () => {
     const resultText = resultDisplayElement.querySelector('h3, p')?.textContent.trim() || '';
     let url = 'health.html'; // ค่าเริ่มต้น
 
-    if (resultText.includes('จุดราขาว')) {
+    if (resultText.includes('โรคจุดราขาว')) {
         url = 'health2.html';
     } else if (resultText.includes('สนิม')) {
         url = 'health3.html';
