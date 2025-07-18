@@ -305,9 +305,7 @@ causeButton.addEventListener('click', () => {
         url = 'bad3.html';
     } else if (resultText.includes('ใบไหม้')) {
         url = 'bad.html';
-    } else if (resultText.includes('ราขาว')) {
-        url = 'bad2.html';
-    }
+    } 
 
     const diseaseName = resultText.replace(/[🚨✅]/g, '').trim();
     window.location.href = `${url}?disease=${encodeURIComponent(diseaseName)}`;
@@ -324,8 +322,6 @@ treatmentButton.addEventListener('click', () => {
         url = 'health3.html';
     } else if (resultText.includes('ใบไหม้')) {
         url = 'health.html';
-    } else if (resultText.includes('ราขาว')) {
-        url = 'health4.html';
     }
 
     const diseaseName = resultText.replace(/[🚨✅]/g, '').trim();
